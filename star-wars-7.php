@@ -85,5 +85,3 @@ function register_wookiee_widget() {
 	register_widget( 'Wookiee_Widget' );
 }
 add_action( 'widgets_init', 'register_wookiee_widget' );
-
-
