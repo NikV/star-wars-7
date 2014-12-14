@@ -31,15 +31,15 @@
  */
 
 //The Force is within this shortcode
-function star_wars_force_awakens_shortcode() {
+function force_awakens_shortcode() {
 
 	$trailer_shortcode = wp_oembed_get( 'https://www.youtube.com/watch?v=erLk59H86ww' );
 	return $trailer_shortcode;
 }
-add_shortcode( 'star-wars-7', 'star_wars_force_awakens_shortcode' );
+add_shortcode( 'star-wars-7', 'force_awakens_shortcode' );
 
 //Give the power of the Jedi to your theme
-function the_force_function() {
+function force_awakens_the_force_function() {
 
 	$trailer_function = wp_oembed_get( 'https://www.youtube.com/watch?v=erLk59H86ww' );
 	echo $trailer_function;
